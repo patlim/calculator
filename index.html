@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="calcContents">
+                <div id="answer" class="screen">hello</div>
+                <table>
+                    <tr>
+                        <td>
+                            <button class="ctrl" onclick="myClick('AC')">AC</button>
+                        </td>
+                        <td>
+                            <button class="ctrl" onclick="myClick('CE')">CE</button>
+                        </td>
+                        <td>
+                            <button onclick="myClick('%')">%</button>
+                        </td>
+                        <td>
+                            <button onclick="myClick('%')">÷</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="myClick(7)">7</button>
+                        </td>
+                        <td>
+                            <button onclick="myClick(8)">8</button>
+                        </td>
+                        <td>
+                            <button onclick="myClick(9)">9</button>
+                        </td>
+                        <td>
+                            <button onclick="myClick('x')">x</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="myClick(4)">4</button>
+                        </td>
+                        <td>
+                            <button onclick="myClick(5)">5</button>
+                        </td>
+                        <td>
+                            <button onclick="myClick(6)">6</button>
+                        </td>
+                        <td>
+                            <button onclick="myClick('-')">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="myClick(1)">1</button>
+                        </td>
+                        <td>
+                            <button onclick="myClick(2)">2</button>
+                        </td>
+                        <td>
+                            <button onclick="myClick(3)">3</button>
+                        </td>
+                        <td class="tallContainer">
+                            <button class="tall" onclick="myClick('+')">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="myClick(0)">0</button>
+                        </td>
+                        <td>
+                            <button onclick="myClick('.')">.</button>
+                        </td>
+                        <td>
+                            <button onclick="myClick('=')">=</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
