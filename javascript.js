@@ -30,7 +30,6 @@ function myClick(val) {
 
         // Change divide symbol to work with eval
     } else if (val === '%') {
-        percentage = parseInt(temp)/100
         temp = (parseInt(temp)/100).toString()
         document.getElementById('answer').innerHTML=temp.substring(0,7);
         entries.push(temp);
@@ -44,6 +43,7 @@ function myClick(val) {
 
         // Got the equals sign, perform calculation
     } else if (val === '=') {
+        console.log(entries)
         entries.push(temp);
 
         var nt = Number(entries[0]);
