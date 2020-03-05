@@ -7,7 +7,7 @@ function myClick(val) {
     // Got a number, add to temp
     if (Number.isInteger(val)) {
         temp += val;
-        document.getElementById('answer').innerHTML=temp.substring(0,10);
+        document.getElementById('answer').innerHTML=temp.substring(0,7);
 
         // Got some symbol other than equals, add temp to our entries
         // then add our current symbol and clear temp
@@ -29,6 +29,14 @@ function myClick(val) {
         temp = '';
 
         // Change divide symbol to work with eval
+    } else if (val === '%') {
+        percentage = parseInt(temp)/100
+        temp = (parseInt(temp)/100).toString()
+        document.getElementById('answer').innerHTML=temp.substring(0,7);
+        entries.push(temp);
+        temp = '';
+
+        // Percentage button
     } else if (val === '÷') {
         entries.push(temp);
         entries.push('/');
